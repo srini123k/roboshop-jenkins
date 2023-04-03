@@ -1,4 +1,4 @@
-terraform {
+ terraform {
   required_providers {
     jenkins = {
       source = "registry.terraform.io/taiidani/jenkins"
