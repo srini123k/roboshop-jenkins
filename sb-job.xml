@@ -6,14 +6,14 @@
     <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps">
         <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
             <triggers>
-                <org.jenkinsci.plugins.gwt.GenericTrigger plugin="generic-webhook-trigger@1.86.2">
+                <org.jenkinsci.plugins.gwt.GenericTrigger plugin="generic-webhook-trigger">
                     <spec></spec>
                     <regexpFilterText></regexpFilterText>
                     <regexpFilterExpression></regexpFilterExpression>
                     <printPostContent>false</printPostContent>
                     <printContributedVariables>false</printContributedVariables>
                     <causeString>Generic Cause</causeString>
-                    <token>cart</token>
+                    <token>${name}</token>
                     <tokenCredentialId></tokenCredentialId>
                     <silentResponse>false</silentResponse>
                     <overrideQuietPeriod>false</overrideQuietPeriod>
